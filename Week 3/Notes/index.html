@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Week 3 Notes
+    </title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+    h3 {
+        margin-top: 100px; /* Add spacing for easier readability */
+    }
+</style>
+</head>
+
+<body>
+    <h1>Week 3 Examples</h1>
+
+    <h3>Example 14.1 EJS Sandbox</h3>
+    <button type="button" onclick="create_table()">Create Mountain Table</button>
+    <div id="mountains"></div>
+
+    <h3>Example 14.2 EJS Sandbox</h3>
+    <button type="button" onclick="byTagName(document.body, 'h1')">Show # of h1's in DOM</button>
+    <button type="button" onclick="byTagName(document.body, 'span')">Show # of span's in DOM</button>
+    <button type="button" onclick="byTagName(para, 'span')">Show # of span's in p's</button> <!-- I can't seem to get this one working correctly. The code works perfectly for the other two tests, but I can't figure out why it doesn't work the same here -->
+    <p id="display"></p>
+    <div>
+        -- Test HTML for 14.2 --
+    <h1>Heading with a <span>span</span> element.</h1>
+    <p>A paragraph with <span>one</span>, <span>two</span>
+    spans.</p>
+        -- End test HTML --
+    </div>
+
+    <h3>Example 15.1 EJS Sandbox</h3>
+    <div>
+        Press the up or down arrow key to inflate or deflate!
+        <p id="balloon">🎈</p>
+    </div>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>

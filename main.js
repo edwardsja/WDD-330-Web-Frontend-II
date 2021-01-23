@@ -9,6 +9,14 @@ const links = [{
   {
     label: "Week2 Team",
     url: "Week 2/Team/index.html"
+  },
+  {
+    label: "Week3 Exercise",
+    url: "Week 3/Notes/index.html"
+  },
+  {
+    label: "Week3 Team",
+    url: "Week 3/Team/index.html"
   }
 ]
 
@@ -25,8 +33,4 @@ for (let i = 0; links.length - 1; i++) {
 
   list_item.appendChild(a);
   ol.appendChild(list_item);
-
-  //list_item.appendChild(a);
-
-  //ol.innerHTML = list_item;
 }
