@@ -1,0 +1,55 @@
+body {
+    margin: 0 auto;
+}
+
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw; 
+    max-width: 200px;
+    height: 20vw;
+    max-height: 200px;
+    border: 1px black solid;
+    font-size: 20vw;
+}
+
+.col:first-of-type .cell {
+    border-left: 1px white solid;
+}
+
+.col .cell:first-of-type {
+    border-top: 1px white solid;
+}
+
+.col:last-of-type .cell {
+    border-right: 1px white solid;
+}
+
+.col .cell:last-of-type {
+    border-bottom: 1px white solid;
+}
+
+#warning {
+    font-size: 10vw;
+    color: red;
+}
+
+#player-display {
+    font-size: 5vw;
+}
+
+.reset-button {
+    width: 100px;
+    height: 30px;
+    background-color: lightgray;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Week 4 Notes
+    </title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+    h3 {
+        margin-top: 100px; /* Add spacing for easier readability */
+    }
+</style>
+</head>
+
+<body>
+    <h1>Week 4 Examples</h1>
+
+    <h3>Example 6.1 EJS Sandbox</h3>
+    <button type="button" onclick="add_vec()">Add Two Vecs</button>
+    <button type="button" onclick="sub_vec()">Subtract Two Vecs</button>
+    <button type="button" onclick="length_calc()">Calculate distance from (0,0) to (x,y)</button>
+    <div id="test1"></div>
+    
+    <h3>Notes</h3>
+    <h4>Forms</h4>
+    <p>input.addEventListener('blur', () => alert('blurred'), false);<br>
+        Adds a blur to element after focus is taken away<br><br>
+        input.addEventListener('change', () => alert('changed'), false);<br>
+        Once the user changes anything in the input box, the change event is flagged
+    </p>
+
+    <h4>Modular</h4>
+    <p>variables and functions can be created outside the main.js file and referenced by the use of import <br><br>
+        import { PI } from './pi.js'; --variable import<br>
+        import  { mean, variance } from './stats.js'; -- function import<br>
+        You do not have to import all functions or variables that are available
+    </p>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
