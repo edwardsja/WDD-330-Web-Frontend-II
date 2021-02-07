@@ -1,0 +1,80 @@
+ul {
+  padding: 0px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 760px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 75px;
+}
+
+li > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
+}
+
+li > div p {
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (min-width: 760px) {
+  li > div p {
+    font-size: 25px;
+  }
+}
+
+li h3:first-of-type(h3) {
+  margin-top: 0px;
+}
+
+img {
+  min-width: 300px;
+  width: 100%;
+  max-width: 600px;
+}
+
+button {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
