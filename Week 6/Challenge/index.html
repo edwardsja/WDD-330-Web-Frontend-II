@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <h1>Todos</h1>
+        <ul id="todo_wrapper" class="todo-wrapper"></ul>
+        <div id="task_footer" class="task-footer">
+            <div id="num_tasks" class="num_tasks"></div>
+            <div id="filter" class="filter">
+                <span class="selected">All</span>
+                <span>Active</span>
+                <span>Completed</span>
+            </div>
+        </div>
+        <div id="task_add" class="task-add">
+            <input type="text" id="new_task" placeholder="Enter new task">
+            <div id="add_button" class="add-button" onclick="add_task()">+</div>
+        </div>
+    </div>
+    
+    <footer><script src="main.js" type="module"></script></footer>
+</body>
+</html>

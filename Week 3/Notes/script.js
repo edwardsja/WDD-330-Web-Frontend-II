@@ -38,6 +38,14 @@ const MOUNTAINS = [{
 
 // Your code here
 
+MOUNTAINS.push({
+  name: "big mountain",
+  height: 99999,
+  place: "nowhere"
+});
+
+console.log(MOUNTAINS);
+
 
 function create_table() {
   let mountain_div = document.getElementById("mountains");
