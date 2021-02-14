@@ -51,6 +51,19 @@ for (let i = 0; links.length - 1; i++) {
   a.href = links[i].url;
   a.innerText = links[i].label;
 
-  list_item.appendChild(a);
-  ol.appendChild(list_item);
+  //first iteration, display normally
+  if (i === 0) {
+    list_item.appendChild(a);
+    ol.appendChild(list_item);
+  } else {
+    // if the previous li's week# is equal to the current li, then insted of making a new li, attach the current a to the previous one
+    let new_i = i - 1;
+    if (links[new_i].url.split("/")[0] === links[i].url.split("/")[0]) {
+      ol.lastChild.innerHTML += " | " + a.outerHTML;
+    } else {
+      list_item.appendChild(a);
+      ol.appendChild(list_item);
+    }
+  }
+  
 }
