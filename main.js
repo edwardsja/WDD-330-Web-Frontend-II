@@ -37,6 +37,14 @@ const links = [{
   {
     label: "Challenge 1",
     url: "Week 6/Challenge/index.html"
+  },
+  {
+    label: "Week7 Excercise",
+    url: "Week 7/Notes/index.html"
+  },
+  {
+    label: "Week7 Team",
+    url: "Week 7/Team/index.html"
   }
 ]
 
