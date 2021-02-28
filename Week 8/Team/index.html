@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Week 8 Team Activity</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/28c2eb3763.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <h1>Star Wars Lists</h1>
+  <h3>How it works:</h3>
+  <ol>
+    <li>Select either option to see a list of characters or space ships</li>
+    <li>Click on a specific character or space ship in the list to see more details</li>
+    <li>Use the buttons below to navigate through the list</li>
+  </ol>
+
+  <form action="" id="list_form" class="list-form">
+    <div>
+      <!-- Wrapped inputs to create bigger click space -->
+      <label for="people">
+        <input type="radio" id="people" name="list" value="people" autocomplete='off'>
+        Characters
+      </label>
+    </div>
+    <div>
+      
+      <label for="starships">
+        <input type="radio" id="starships" name="list" value="starships">
+        Space Ships
+      </label>
+    </div>
+  </form>
+  
+  
+  <div id="result" class="result"></div>
+  <div class="button-wrapper none" id="button_wrapper">
+    <div id="back" class="back">Back</div>
+    <div id="page_num" class="page-num"></div>
+    <div id="forward" class="forward">Forward</div>
+  </div>
+  <!-- Create dropdown list of options to select, use selection to add to root -->
+
+
+  <footer>
+    <script src="main.js"></script>
+  </footer>
+</body>
+
+</html>

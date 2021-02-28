@@ -1,0 +1,137 @@
+@media screen and (min-width: 768px) {
+  body {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-right: 10px;
+  margin-left: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  ol {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+form {
+  border-bottom: 2px black double;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form label {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.result ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.result ul > li {
+  margin: 10px;
+  padding: 10px;
+  padding-left: 15%;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.result ul > li i {
+  margin-left: 10px;
+}
+
+.result ul > li div::before {
+  content: ' ';
+  border-top: 1px solid black;
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+
+.underline::after {
+  content: ' ';
+  border-bottom: 1px solid black;
+}
+
+.desc-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.desc-box li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-top: 5px;
+}
+
+.back, .forward {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
