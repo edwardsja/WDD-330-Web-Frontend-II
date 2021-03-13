@@ -1,0 +1,100 @@
+body {
+    @media screen and (min-width:600px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 60%;
+    }
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.quakeList {
+    padding-left: 10px;
+    padding-right: 10px;
+    & > li {
+        list-style: none;
+        margin-bottom: 50px;
+        
+        ul {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px black solid;
+            border-bottom: 1px lightgray solid;
+            li {
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+}
+
+.button {
+    width: 100px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+main > div:first-of-type {
+    border-bottom: 3px black solid;
+    padding-bottom: 20px;
+    input {
+        height: 25px;
+        max-width: 100px;
+        @media screen and (min-width: 600px) {
+            max-width: 150px;
+        }
+        @media screen and (min-width: 600px) {
+            max-width: 150px;
+        }
+    }
+    label {
+        display: inline-block;
+        width: 100%;
+        color: lighten(black, $amount: 30%)
+    }
+    & p:first-of-type{
+        margin-bottom: 5px;
+    }
+    & p:last-of-type {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    & div:nth-of-type(2) {
+        span {
+            max-width: 110px;
+            @media screen and (min-width: 600px) {
+                max-width: 155px;
+            }
+            @media screen and (min-width: 1024px) {
+                max-width: 170px;
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &:first-of-type {
+                margin-bottom: 10px;
+            }
+        }
+        div:last-of-type {
+        margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Week 10 Notes</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+    h3 {
+        margin-top: 100px; /* Add spacing for easier readability */
+    }
+</style>
+</head>
+
+<body>
+    <h1>Week 10 Notes</h1>
+
+    <h3>Validating Forms</h3>
+    <p>
+        <strong>Constraint Validation API</strong><br>
+        element.typeMismatch returns true or false depending if the inserted text matches the input's pattern<br>
+        element.setCustomValidity(""); used to give custom error messages<br>
+        setting a custom error message is useful because there is no way to change it's style with CSS, JS can be used, but it requires much more lines of code than just using the constraint validation API
+
+    </p>
+    <h3>Fetch</h3>
+    <p>
+        <strong>init: optional parameter of fetch()</strong><br>
+        'headers' lets you add additional information with the fetch request<br>
+        'Content-Type' header allows you to  pass what type of file that is being fetched. (ex. 'image/jpeg', or 'application/json')<br><br>
+        'redirect' tells the program what to do when the fetch redirects, it can 'follow' the redirect, or throw an 'error' and abort
+        
+    </p>
+
+    <footer>
+        <script src="main.js"></script>
+    </footer>
+</body>
+
+</html>
