@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dragon Breed Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Dragon Breed Game</h2>
+        <div id="coin_div" class="coin-div">
+            <h4>Coins:&nbsp;</h4>
+            <span id="num_coins"></span>
+        </div>
+        <!-- <div id="food_div" class="food-div">
+            <h4>Food: </h4>
+            <span id="num_food">400</span>
+        </div> -->
+        <div id="manual_save" class="manual-save"> 
+            <div>Save Progress</div>
+            <p>*Progress is automatically saved every 5 minutes.</p>
+        </div>
+    </header>
+    <main>
+        <div id="main_wrapper" class="main-wrapper">
+            <div class="breeding" id="breeding">
+                <h4>Breeding Station</h4>
+                <div>*Hint: You start with "common fire" and "common grass". You can also try clicking or tapping an owned dragon</div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Enter dragon name" class="breed-input">
+                    <input type="text" placeholder="Enter a different name" class="breed-input">
+                </div>
+                <div id='breed_button' class="breed-button">Breed</div>
+            </div>
+
+            <div class="inventory" id="inventory">
+                <h4>Owned Dragons</h4>
+                <ul id="inv_list">
+                    <!-- These two are starters -->
+                    <li>common fire</li>
+                    <li>common grass</li>
+                    <li>uncommon laser</li>
+                    <li>uncommon steel</li>
+                    <li>uncommon inferno</li>
+                </ul>
+                <input type="text" placeholder="Enter full dragon name" id="sell_dragon">
+                <div id="sell_button" class="sell_button">Sell Dragon</div>
+            </div>
+
+
+            <div class="store" id="store">
+
+                <h4>Store</h4>
+                <div id="store_alert"></div>
+                <div id="store_list_container" class="store-list-container">
+                    <ul id="store_list_name" class='store-list-name'></ul>
+                    <ul id="store_list_price" class='store-list-price'></ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div id="test_output" onclick="test()">CLICK HERE</div> -->
+
+        <!-- Modal content -->
+        <div class="modal" id="modal">
+            <div class="modal-header" id="modal_header">
+                <span>&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body" id="modal_body">
+                <p>Some text in the Modal Body</p>
+            </div>
+            <div class="modal-footer" id="modal_footer">
+                <button type="button" id="modal_confirm">Ok</button>
+                <button type="buton" id="modal_cancel">Cancel</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id='hints' class='hints'>
+            <div id="hints_button_wrapper">
+                <div id="show_hints" class="show-hints-button">Show Hints</div>
+                <div id="hide_hints" class="hide-hints-button">Hide Hints</div>
+            </div>
+            <h4>Hints:</h4>
+            <div id="hints_wrapper" class='hints-wrapper'>
+            <p>Hint 1: There are 4 pairs of opposite elements. The single element dragons of opposite types cannot directly breed with each other. <br>
+            Example: A "Fire" and "Ice" dragon cannot breed. But, an "Inferno" (Fire, Wind) and an "Ice" dragon can breed</p>
+            <ul>
+                Opposite Element List
+                <li>Fire, Ice</li>
+                <li>Rock, Air</li>
+                <li>Grass, Metal</li>
+                <li>Water, Lightning</li>
+            </ul>
+            <p>Hint 2: To get more rare dragons, try breeding two dragons of the same rarity. Breeding certain dragons of the same rarity can result in higher rarity.  <br>
+               Example: Breeding a specific Uncommon dragon with an specific Uncommon dragon can sometimes yield a Rare dragon</p>
+
+               <p>Hint 3: There are 80 total dragons.</p>
+            <ul>
+                <li>14 Common Dragons</li>
+                <li>22 Uncommon Dragons</li>
+                <li>24 Rare Dragons</li>
+                <li>8 Very Rare Dragons</li>
+                <li>8 Epic Dragons</li>
+                <li>4 Legendary Dragons</li>
+            </ul>
+            <p>Good luck and have fun collecting dragons!</p>
+            </div>
+        </div>
+        <div id='delete_progress' class='delete-progress'>
+            <div class="first-warning button" id="first_warning">Reset Progress</div>
+            <div id='reset_button' class="reset-button">Reset Progress</div>
+            <p>WARNING: This will delete all of your progress. This action is NOT reversable. Be absolutely certain you want to start over.</p>
+        </div>
+        <div class="mobile-buttons" id=mobile_buttons>
+            <div class='mobile-focus'>Inventory</div>
+            <div>Store</div>
+            <div>Options</div>
+        </div>
+        <script src="main.js" type="module"></script>
+    </footer>
+</body>
+
+</html>

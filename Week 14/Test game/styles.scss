@@ -1,0 +1,691 @@
+body {
+    color: white;
+    background-color: lighten(black, $amount: 11%);
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+    @media screen and (min-width: 768px) {
+        margin: 5px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Itim', cursive;
+    font-size: 140%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px white solid;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    h2 {
+        flex: 0 0 100%;
+        text-align: center;
+        border-bottom: 1px solid lighten(black, $amount: 35%);
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        font-size: 200%;
+        @media screen and (min-width: 768px) {
+            border-bottom: none;
+        }
+    }
+
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    div {
+        flex: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border-right: 1px solid lighten(black, $amount: 35%);
+        @media screen and (min-width: 768px) {
+            flex: 0 0 15%;
+            flex-flow: row;
+            border-right: none;
+        }
+        & span {
+            padding-top: 4px;
+            color: gold;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+    p {
+        margin: 5px 0px;
+    }
+}
+
+.manual-save {
+    padding-top: 15px;
+    flex: 50%;
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    div {
+        border: 1px solid white;
+        padding: 4px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        @media screen and (min-width: 768px) {
+            padding: 5px;
+            padding-left: 15px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.main-wrapper {
+    overflow: hidden scroll;
+    &:first-child {
+        margin-top: 20px;
+    }
+    > div:nth-of-type(2) {
+        margin-bottom: 80px;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+.breeding {
+    width: calc(70% + 50px);
+    margin: 0 auto;
+    h4 {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex: 0 0 100%;
+        margin: 0 auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    >* {
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: 1090px) {
+            width: 30%;
+        }
+    }
+
+    h4 {
+        @media screen and (min-width: 768px) {}
+    }
+
+    .input-wrapper {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .breed-input {
+        padding: 10px 0px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        width: 49%;
+        @media screen and (min-width: 768px) {
+            box-sizing: border-box;
+            width: calc(50% - 4px);
+            align-self: center;
+            justify-self: center;
+        }
+
+        :first-of-type {
+            @media screen and (min-width: 768px) {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+
+        :first-of-type {
+            @media screen and (min-width: 768px) {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+        }
+    }
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+}
+
+.inventory {
+    width: calc(70% + 50px);
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        display: block;
+        flex: calc(65% - 50px);
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1090px) {
+        margin-left: 50px;
+        flex: calc(60% - 50px);
+    }
+    input {
+        padding: 10px 0px;
+        width: 49%;
+        padding-left: 10px;
+        box-sizing: border-box;
+        @media screen and (min-width: 1090px) {
+            width: 30%;
+        }
+    }
+    h4 {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+
+    h4 {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        align-content: center;
+        justify-content: center;
+        padding: 0px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        @media screen and (min-width: 1090px) {
+            margin-right: 90px;
+        }
+        li {
+            border: 1px solid white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 20px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            @media screen and (min-width: 768px) {
+                flex: 0 0 46%;
+                width: 90%;
+                margin-bottom: 0px;
+                margin-top: 20px;
+                padding-left: 10px;
+                margin-left: 0px;
+                margin-right: 0px;
+                cursor: pointer;
+            }
+            @media screen and (min-width: 1090px) {
+                flex: 0 0 33%;
+                box-sizing: border-box;
+            }
+        }
+    }
+    img {
+        height: 24px;
+        &:first-of-type {
+            margin-left: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 24px;
+        }
+    }
+
+    .icon-desc {
+        @media screen and (min-width: 768px) {
+            position: absolute;
+            border: 1px solid gray;
+            background-color: gray;
+            padding: 2px 5px;
+        }
+    }
+}
+
+
+.store {
+    display: none;
+    width: calc(70% + 50px);
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        display: block;
+        flex: calc(35% - 50px);
+        margin-right: 10px;
+    }
+    @media screen and (min-width: 1090px) {
+        margin-right: 50px;
+        flex: calc(40% - 50px);
+    }
+    h4 {
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 0px;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+    & .store-list-container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        ul {
+            padding: 0px;
+            width: 50%;
+            @media screen and (min-width: 768px) {
+                flex: 0 0 50%;
+            }
+        }
+        li {
+            list-style: none;
+            border: 1px solid white;
+            padding: 10px 30px;
+            padding-right: 0px;
+            margin-bottom: 20px;
+            @media screen and (min-width: 768px) {
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+    }
+    .store-list-name {
+        li {
+            border-right: none;
+            padding-left: 20px;
+            @media screen and (min-width: 768px) {
+               padding-left: 10px;
+            }
+        }
+    }
+    .store-list-price {
+        li {
+            border-left: none;
+            @media screen and (min-width: 768px) {
+                text-align: right;
+                padding-right: 10px;
+                padding-left: 0px;
+            }
+        }
+    }
+    ul {
+        @media screen and (min-width: 768px) {
+            margin-top: 0px;
+        }
+
+        .store_list_name {
+            @media screen and (min-width: 768px) {
+                padding-left: 0px;
+            }
+
+            li {
+                @media screen and (min-width: 768px) {
+                    border-right: none;
+                    
+                    padding-left: 30px;
+                }
+            }
+        }
+
+        .store_list_price {
+            @media screen and (min-width: 768px) {
+                list-style: none;
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+
+            li {
+                @media screen and (min-width: 768px) {
+                    border-left: 0px;
+                    text-align: right;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        li {
+            @media screen and (min-width: 768px) {
+                border: 1px white solid;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        }
+
+        div:first-of-type {
+            @media screen and (min-width: 768px) {
+                flex: 0 0 100%;
+            }
+        }
+    }
+
+    h4 {
+        @media screen and (min-width: 768px) {
+            flex: 0 0 100%;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+div[class*="button"] {
+    text-align: center;
+    border: 1px solid white;
+    width: 40%;
+    margin-top: 10px;
+    padding: 10px 0px;
+    @media screen and (min-width: 768px) {
+        width: 100px;
+    }
+
+    &:hover {
+        @media screen and (min-width: 768px) {
+            cursor: pointer;
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    @media screen and (min-width: 768px) {
+        overflow: auto;
+        padding: 15% auto;
+    }
+}
+
+.modal-body {
+    background-color: #5E4C5A;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+.modal-header,
+.modal-footer {
+    margin: 0 auto;
+    background-color: #5E4C5A;
+    color: white;
+    @media screen and (min-width: 768px) {
+        
+    }
+}
+
+.modal-header {
+    margin-top: 30vw;
+    @media screen and (min-width: 768px) {
+        margin-top: 10vw;
+    }
+
+    span {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        @media screen and (min-width: 768px) {
+            cursor: pointer;
+        }
+    }
+
+    h2 {
+        @media screen and (min-width: 768px) {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.close:hover,
+.close:focus {
+    @media screen and (min-width: 768px) {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.modal-footer button {
+    padding: 10px 25px;
+    box-shadow: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px 25px;
+    }
+}
+
+.modal-footer button:first-of-type {
+    background-color: darkgreen;
+    border: 1px darkgreen solid;
+    color: white;
+    margin-right: 3vw;   
+    &:hover {
+        @media screen and (min-width: 768px) {
+            background-color: lighten(darkgreen, 5%);
+        }
+    }
+}
+
+.modal-footer button:last-of-type {
+    background-color: darken(red, $amount: 20%);
+    border: 1px darken(red, $amount: 20%) solid;
+    color: white;
+    margin-left: 3vw;
+    @media screen and (min-width: 768px) {
+        margin-left: 0px;
+    }
+    &:hover {
+        @media screen and (min-width: 768px) {
+            background-color: darken(red, 12.5%);
+        }
+    }
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    text-align: center;
+    padding: 10px;
+    @media screen and (min-width: 768px) {
+        width: 70%;
+    }
+    @media screen and (min-width: 1090px) {
+        width: 30%;
+    }
+}
+
+footer {
+    * {
+        width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .delete-progress {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            p {
+                display: none;
+            }
+        }
+    }
+    .first-warning {
+        display: none;
+        border: 1px solid white;
+        margin-top: 50px;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+    .reset-button {
+        margin-top: 50px;
+        display: none;
+        border: 1px solid darken(red, $amount: 20%);
+        background-color: darken(red, $amount: 20%);
+
+    }
+
+    .mobile-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0px;
+        background-color: #5E4C5A;
+        text-align: center;
+        padding: 0px;
+        border: #5E4C5A;
+        & div.mobile-focus {
+            background-color: darken($color: #5e4c5a, $amount: 10%);
+        }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        * {
+            flex: 50%;
+            padding: 20px 0px;
+
+            &:not(:last-child) {
+                border-right: 1px solid white;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        border-top: 1px solid lighten(black, $amount: 35%);
+        display: flex;
+    }
+    .hints {
+        display: none;
+        * {
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: 70%;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+            padding: 10px;
+            padding-bottom: 0px;
+            flex: 70%;
+        }
+        & #hints_button_wrapper {
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                & * {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .hide-hints-button {
+                    display: none;
+                }
+            }
+        }
+        & .hints-wrapper {
+            margin-left: 0px;
+            margin-right: 0px;
+            @media screen and (min-width: 768px) {
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+            }
+            * {
+            margin-left: 0px;
+            margin-right: 0px; 
+            }
+        }
+    }
+    .delete-progress {
+        @media screen and (min-width: 768px) {
+            padding: 10px;
+            padding-bottom: 0px;
+            border-left: 1px solid lighten(black, $amount: 35%);
+            flex: 30%;
+        }
+        div {
+            @media screen and (min-width: 768px) {
+                width: 50%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            &.first-warning {
+                @media screen and (min-width: 768px) {
+                    
+                }
+            }
+
+            &.reset-button {
+                @media screen and (min-width: 768px) {
+                    display: none;
+                    
+                }
+            }
+        }
+
+        p {
+            @media screen and (min-width: 768px) {
+                display: none;
+                margin-bottom: 0px;
+            }
+
+        }
+    }
+}

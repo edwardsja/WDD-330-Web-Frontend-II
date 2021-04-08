@@ -1,0 +1,63 @@
+[{
+    "name": "fire",
+    "elements": ["fire"]},
+{
+    "name": "water",
+    "elements": ["water"]},
+{
+    "name": "grass",
+    "elements": ["grass"]},
+{
+    "name": "rock",
+    "elements": ["rock"]},
+{
+    "name": "air",
+    "elements": ["air"]},
+{
+    "name": "metal",
+    "elements": ["metal"]},
+{
+    "name": "ice",
+    "elements": ["ice"]},
+{
+    "name": "lightning",
+    "elements": ["lightning"]},
+{
+    "name": "lava",
+    "elements": ["fire", "rock"]},
+{
+    "name": "vine",
+    "elements": ["fire", "grass"]},
+{
+    "name": "cloud",
+    "elements": ["fire", "water"]},
+{
+    "name": "swamp",
+    "elements": ["water", "grass"]},
+{
+    "name": "mud",
+    "elements": ["water", "rock"]},
+{
+    "name": "forest",
+    "elements": ["grass", "rock"]},
+{
+    "name": "inferno",
+    "elements": ["fire", "air"]},
+{
+    "name": "laser",
+    "elements": ["fire", "lightning"]},
+{
+    "name": "bubble",
+    "elements": ["water", "air"]},
+{
+    "name": "steel",
+    "elements": ["fire", "metal"]},
+{
+    "name": "dandelion",
+    "elements": ["air", "grass"]},
+{
+    "name": "frostfire",
+    "elements": ["fire", "ice"]},
+{
+    "name": "molten",
+    "elements": ["fire", "lightning", "metal"]}]
