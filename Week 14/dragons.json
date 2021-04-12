@@ -56,8 +56,186 @@
     "name": "dandelion",
     "elements": ["air", "grass"]},
 {
+    "name": "verdigris",
+    "elements": ["air", "metal"]},
+{
+    "name": "blizzard",
+    "elements": ["air", "ice"]},
+{
+    "name": "thunder",
+    "elements": ["air", "lightning"]},
+{
     "name": "frostfire",
     "elements": ["fire", "ice"]},
 {
-    "name": "molten",
-    "elements": ["fire", "lightning", "metal"]}]
+    "name": "gemstone",
+    "elements": ["water", "metal"]},
+{
+    "name": "iceburg",
+    "elements": ["water", "ice"]},
+{
+    "name": "evergreen",
+    "elements": ["ice", "grass"]},
+{
+    "name": "cactus",
+    "elements": ["grass", "lightning"]},
+{
+    "name": "iron",
+    "elements": ["metal", "rock"]},
+{
+    "name": "mountain",
+    "elements": ["ice", "rock"]},
+{
+    "name": "glass",
+    "elements": ["rock", "lightning"]},
+{
+    "name": "coldforged",
+    "elements": ["metal", "ice"]},
+{
+    "name": "magnet",
+    "elements": ["metal", "lightning"]},
+{
+    "name": "thundersnow",
+    "elements": ["ice", "lightning"]},
+{
+    "name": "jellyfish",
+    "elements": ["water", "lightning"]},
+{
+    "name": "dust",
+    "elements": ["air", "rock"]},
+{
+    "name": "ironwood",
+    "elements": ["metal", "grass"]},
+{
+    "name": "golem",
+    "elements": ["rock", "grass", "metal"]},
+{
+    "name": "coral",
+    "elements": ["water", "metal", "grass"]},
+{
+    "name": "firegrassmetal",
+    "elements": ["fire", "grass", "metal"]},
+{
+    "name": "grassmetalair",
+    "elements": ["grass", "metal", "air"]},
+{
+    "name": "grassicemetal",
+    "elements": ["grass", "ice", "metal"]},
+{
+    "name": "grassmetallightning",
+    "elements": ["grass", "metal", "lightning"]},
+{
+    "name": "bolt",
+    "elements": ["rock", "lightning", "air"]},
+{
+    "name": "terra",
+    "elements": ["rock", "water", "air"]},
+{
+    "name": "prarie",
+    "elements": ["rock", "grass", "air"]},
+{
+    "name": "palm",
+    "elements": ["rock", "grass", "air"]},
+{
+    "name": "rockmetalair",
+    "elements": ["rock", "metal", "air"]},
+{
+    "name": "rockiceair",
+    "elements": ["rock", "ice", "air"]},
+{
+    "name": "frozenrose",
+    "elements": ["ice", "fire", "grass"]},
+{
+    "name": "firewatereice",
+    "elements": ["fire", "water", "ice"]},
+{
+    "name": "firerockice",
+    "elements": ["fire", "rock", "ice"]},
+{
+    "name": "fireiceair",
+    "elements": ["fire", "ice", "air"]},
+{
+    "name": "fireicemetal",
+    "elements": ["fire", "ice", "metal"]},
+{
+    "name": "fireicelightning",
+    "elements": ["fire", "ice", "lightning"]},
+{
+    "name": "firewaterlightning",
+    "elements": ["fire", "water", "lightning"]},
+{
+    "name": "grasswaterlightning",
+    "elements": ["grass", "water", "lightning"]},
+{
+    "name": "waterrocklightning",
+    "elements": ["water", "rock", "lightning"]},
+{
+    "name": "tempest",
+    "elements": ["water", "air", "lightning"]},
+{
+    "name": "watermetallightning",
+    "elements": ["water", "metal", "lightning"]},
+{
+    "name": "watericelightning",
+    "elements": ["water", "ice", "lightning"]},
+{
+    "name": "engine",
+    "elements": ["fire", "metal", "lightning"]},
+{
+    "name": "meteor",
+    "elements": ["air", "rock", "fire"]},
+{
+    "name": "cobalt",
+    "elements": ["fire", "air", "ice"]},
+{
+    "name": "summer",
+    "elements": ["fire", "lightning", "air"]},
+{
+    "name": "autumn",
+    "elements": ["grass", "ice", "air"]},
+{
+    "name": "spring",
+    "elements": ["grass", "fire", "air"]},
+{
+    "name": "winter",
+    "elements": ["ice", "water", "air"]},
+{
+    "name": "ouroboros",
+    "elements": ["water", "lightning", "metal"]},
+{
+    "name": "soceress",
+    "elements": ["fire", "ice", "lightning", "air"]},
+{
+    "name": "druid",
+    "elements": ["grass", "water", "lightning", "air"]},
+{
+    "name": "necromancer",
+    "elements": ["rock", "ice", "metal", "lightning"]},
+{
+    "name": "primal",
+    "elements": ["fire", "grass", "water", "rock"]},
+{
+    "name": "paladin",
+    "elements": ["ice", "metal", "lightning", "air"]},
+{
+    "name": "ranger",
+    "elements": ["grass", "rock", "metal", "water"]},
+{
+    "name": "barbarian",
+    "elements": ["fire", "rock", "ice", "metal"]},
+{
+    "name": "monk",
+    "elements": ["water", "rock", "lightning", "air"]},
+{
+    "name": "zeus",
+    "elements": ["air", "lightning", "metal", "water"]},
+{
+    "name": "hephestus",
+    "elements": ["metal", "rock", "fire", "air"]},
+{
+    "name": "aphrodite",
+    "elements": ["fire", "water", "ice", "air"]},
+{
+    "name": "poseidon",
+    "elements": ["water", "ice", "grass", "rock"]}
+]
