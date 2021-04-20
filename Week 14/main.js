@@ -812,8 +812,6 @@ store_price.querySelectorAll('li').forEach(item => {
 })
 
 function buy_item(item, confirmation) {
-    let user_coins = parseInt(document.getElementById("num_coins").innerHTML);
-
     // set up variables
     let str;
     let store_item
@@ -845,7 +843,7 @@ function buy_item(item, confirmation) {
     if (confirmation == 1) {
         switch (store_item) {
             case 'Fire':
-                if (user_coins >= store.prices[0]) {
+                if (coin_counter >= store.prices[0]) {
                     coin_counter -= store.prices[0];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -858,7 +856,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Grass':
-                if (user_coins >= store.prices[1]) {
+                if (coin_counter >= store.prices[1]) {
                     coin_counter -= store.prices[1];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -871,7 +869,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Water':
-                if (user_coins >= store.prices[2]) {
+                if (coin_counter >= store.prices[2]) {
                     coin_counter -= store.prices[2];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -884,7 +882,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Rock':
-                if (user_coins >= store.prices[3]) {
+                if (coin_counter >= store.prices[3]) {
                     coin_counter -= store.prices[3];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -897,7 +895,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Air':
-                if (user_coins >= store.prices[4]) {
+                if (coin_counter >= store.prices[4]) {
                     coin_counter -= store.prices[4];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -910,7 +908,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Ice':
-                if (user_coins >= store.prices[5]) {
+                if (coin_counter >= store.prices[5]) {
                     coin_counter -= store.prices[5];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -923,7 +921,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Lightning':
-                if (user_coins >= store.prices[6]) {
+                if (coin_counter >= store.prices[6]) {
                     coin_counter -= store.prices[6];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
@@ -936,7 +934,7 @@ function buy_item(item, confirmation) {
                     break;
                 };
             case 'Metal':
-                if (user_coins >= store.prices[7]) {
+                if (coin_counter >= store.prices[7]) {
                     coin_counter -= store.prices[7];
                     let inv_ul = document.getElementById('inv_list');
                     let li = document.createElement('li');
